@@ -21,6 +21,8 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
   const LoginModal = useLoginModal();
   const RentModal = useRentModal();
 
+  console.log({ currentUser });
+
   const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);

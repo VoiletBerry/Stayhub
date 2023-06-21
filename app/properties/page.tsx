@@ -12,7 +12,7 @@ const PropertiesPage = async () => {
 
   const listings = await getListing({ userId: currentUser.id });
 
-  if (listings.length === 0) {
+  if (listings === null || listings.length === 0) {
     return (
       <Empty
         title="No properties found"

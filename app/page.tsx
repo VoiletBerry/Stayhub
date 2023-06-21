@@ -12,6 +12,10 @@ export default async function Home({ searchParams }: HomeProps) {
   const listings = await getListing(searchParams);
   const currentUser = await getCurrentUser();
 
+  if (listings === null || listings.length === 0) {
+    return <Empty showReset />;
+  }
+
   if (listings.length === 0) {
     return <Empty showReset />;
   }
