@@ -1,7 +1,5 @@
 import prisma from "@/app/libs/prismadb";
 
-export const dynamic = "force-dynamic";
-
 export interface ListingsParms {
   userId?: string;
   guestCount?: number;
@@ -15,10 +13,6 @@ export interface ListingsParms {
 
 export default async function getListing(params: ListingsParms) {
   try {
-    if (dynamic === "force-dynamic") {
-      return null;
-    }
-
     const {
       userId,
       guestCount,

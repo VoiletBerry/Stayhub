@@ -4,6 +4,8 @@ import getListing, { ListingsParms } from "./actions/getListing";
 import Empty from "./components/Empty";
 import ListingsContainer from "./components/listings/ListingsContainer";
 
+export const dynamic = "force-dynamic";
+
 interface HomeProps {
   searchParams: ListingsParms;
 }
