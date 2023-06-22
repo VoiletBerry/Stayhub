@@ -21,7 +21,6 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
   const LoginModal = useLoginModal();
   const RentModal = useRentModal();
 
-  console.log({ currentUser });
 
   const router = useRouter();
 
@@ -46,7 +45,7 @@ const Usermenu: React.FC<UsermenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="hidden md:block text-sm font-semibold py-1 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
         >
-          StayHub your home
+          Stayhub Your Home
         </div>
         <div
           onClick={toggleOpen}
